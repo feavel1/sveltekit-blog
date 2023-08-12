@@ -10,13 +10,18 @@
 <nav class="list-nav p-4 mt-2">
 	<ul>
 		<li><a on:click={drawerClose} href="/">Home</a></li>
+
+		<li>
+			<a on:click={drawerClose} href="/posts"
+				>All posts <span class="badge variant-filled ml-2">New!</span></a
+			>
+		</li>
+
 		<li>
 			<a on:click={drawerClose} href={session ? '/profile' : '/auth'}
 				>{session ? 'My Profile' : 'Log-in / Register'}</a
 			>
 		</li>
-		<li><a on:click={drawerClose} href="/posts/create-post">Create Post</a></li>
-
 		<li><a on:click={drawerClose} href="/subscription">Subscription</a></li>
 
 		<!-- <li>

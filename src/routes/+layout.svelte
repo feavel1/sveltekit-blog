@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Styles and CSS
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '../apptheme.postcss';
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
 	import hljs from 'highlight.js';

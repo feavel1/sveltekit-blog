@@ -36,7 +36,6 @@
 	const interval = subscription?.prices?.interval;
 </script>
 
-<h1 class="h1 font-thin">Profile Overview</h1>
 <section>
 	{#if !session}
 		<div>Not logged in</div>

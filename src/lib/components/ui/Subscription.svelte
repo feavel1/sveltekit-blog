@@ -43,13 +43,21 @@
 	};
 </script>
 
-<div class="max-w-lg">
-	<ListBox class="bg-tertiary-900 p-10">
-		<ListBoxItem bind:group={billingInterval} name="medium" value="month">Monthly</ListBoxItem>
-		<ListBoxItem bind:group={billingInterval} name="medium" value="year">Yearly</ListBoxItem>
-	</ListBox>
+<div class="flex justify-between flex-row align-middle">
+	<div class="max-w-xs">
+		<ListBox class="bg-tertiary-900 p-1">
+			<ListBoxItem bind:group={billingInterval} name="medium" value="month">Monthly</ListBoxItem>
+			<ListBoxItem bind:group={billingInterval} name="medium" value="year">Yearly</ListBoxItem>
+		</ListBox>
+	</div>
+	<div class="text-right">
+		<p class="text-xs italic text-gray-500">
+			You can support me, so that I support you ❤️ - Feavel
+		</p>
+		<h1 class="h1">Subscription</h1>
+		<p class="italic text-lg">订阅 📮</p>
+	</div>
 </div>
-
 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
 	{#each products as product}
 		<section class="card w-full block card-hover variant-glass-primary">
