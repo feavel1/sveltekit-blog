@@ -51,7 +51,7 @@
 		</ListBox>
 	</div>
 	<div class="text-right">
-		<p class="text-xs italic text-gray-500">
+		<p class="text-xs italic text-gray-500 py-2">
 			You can support me, so that I support you ❤️ - Feavel
 		</p>
 		<h1 class="h1">Subscription</h1>

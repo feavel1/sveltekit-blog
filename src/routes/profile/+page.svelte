@@ -36,6 +36,18 @@
 	const interval = subscription?.prices?.interval;
 </script>
 
+<div class="flex justify-between flex-col-reverse md:flex-row">
+	<div class="flex flex-col gap-4">
+		<a href="/profile/settings" class="btn variant-filled-primary">Settings</a>
+		<button class="btn variant-filled" on:click={handleSignOut}>Sign out</button>
+	</div>
+	<div class="text-right h-full">
+		<p class="text-xs italic text-gray-500 py-2">Manage your profile right here! - Feavel</p>
+		<h1 class="h1">My profile</h1>
+		<p class=" text-lg">账号管理 📑</p>
+	</div>
+</div>
+
 <section>
 	{#if !session}
 		<div>Not logged in</div>
@@ -68,18 +80,16 @@
 		</div>
 
 		<div class="card mb-4">
-			<h1 class="card-header h3 mb-4">My posts:</h1>
-			<p class="card-footer">Post name 1</p>
-			<p class="card-footer">Post name 2</p>
-			<p class="card-footer">Post name 3</p>
+			<h1 class="card-header h3">My posts:</h1>
+			<details class="card-footer">
+				<p class="card-footer">Post name 1</p>
+				<p class="card-footer">Post name 2</p>
+			</details>
 		</div>
 
-		<a href="/profile/settings" class="btn variant-filled-primary">Settings</a>
-		<button class="btn variant-filled" on:click={handleSignOut}>Sign out</button>
-
-		<details>
+		<!-- <details>
 			<summary>More data in : session.user</summary>
 			<pre class="pre">{JSON.stringify(session.user, null, 2)}</pre>
-		</details>
+		</details> -->
 	{/if}
 </section>
