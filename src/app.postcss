@@ -1,0 +1,25 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	/* Reference name */
+	font-family: 'PatrickHand';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/PatrickHand-Regular.ttf');
+}
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+:root {
+	--theme-font-family-base: 'PatrickHand', sans-serif;
+	--theme-font-family-heading: 'PatrickHand', sans-serif;
+}
+
+.very-big-font {
+	font-size: 11cqw;
+}
