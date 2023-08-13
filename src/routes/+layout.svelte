@@ -57,7 +57,7 @@
 
 <Noise />
 <AppShell slotSidebarLeft="bg-surface-500/5 w-0 lg:w-64" {classesSidebar}>
-	<svelte:fragment slot="header">
+	<svelte:fragment slot="pageHeader">
 		<AppBar>
 			<svelte:fragment slot="lead">
 				<div class="flex items-center">
@@ -79,18 +79,17 @@
 		<Navigation {session} />
 	</svelte:fragment>
 
-	<div class="container mx-auto p-8 space-y-4">
+	<div class="container mx-auto p-4 space-y-4">
 		<Breadcrumbs path={$page.url.pathname} />
 		<hr />
-
 		<slot />
 	</div>
 
 	<svelte:fragment slot="pageFooter">
-		<div class="text-sm text-right m-2 text-gray-500">
+		<div class="text-sm text-right mr-2 text-gray-500">
 			<div>
 				view web page source code on github: <a
-					class="text-xl underline decoration-blue-400 hover:decoration-blue-100 hover:text-white"
+					class=" underline decoration-blue-400 hover:decoration-blue-100 hover:text-white"
 					href="https://github.com/feavel1"
 				>
 					feavel1

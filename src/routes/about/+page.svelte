@@ -1,4 +1,5 @@
 <script>
+	import File from '$lib/components/icons/File.svelte';
 	import ContactInfo from '$lib/components/ui/ContactInfo.svelte';
 </script>
 

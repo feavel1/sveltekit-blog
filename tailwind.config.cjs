@@ -5,17 +5,17 @@ module.exports = {
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
 		// 2. Append the path for the Skeleton NPM package and files:
-		require('path').join(require.resolve(
-			'@skeletonlabs/skeleton'),
-			'../**/*.{html,js,svelte,ts}'
-		)
+		require('path').join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
 	theme: {
-		extend: {},
+		extend: {}
 	},
 	plugins: [
 		// 3. Append the Skeleton plugin to the end of this list
 		require('@tailwindcss/forms'),
+		// require('@tailwindcss/typography')({
+		// 	// className: 'markdown-body'
+		// }),
 		...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
 	]
-}
+};
