@@ -45,6 +45,7 @@
 		"bytemd": "^1.21.0",
 		"github-markdown-css": "^5.2.0",
 		"highlight.js": "^11.8.0",
-		"stripe": "^12.18.0"
+		"stripe": "^12.18.0",
+		"svelte-lexical": "^0.3.4"
 	}
 }

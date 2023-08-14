@@ -24,8 +24,8 @@
 		gfm(),
 		highlight(),
 		frontmatter(),
-		// gemoji(),
 		math()
+		// gemoji(),
 		// mermaid()
 	];
 

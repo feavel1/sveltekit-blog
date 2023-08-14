@@ -1,5 +1,5 @@
 <script lang="ts">
-	let inputDemo = '';
+	let inputDemo = ' ';
 </script>
 
 <div class="flex justify-between flex-col-reverse md:flex-row">

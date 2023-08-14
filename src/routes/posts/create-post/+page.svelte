@@ -1,9 +1,10 @@
 <script lang="ts">
 	// Skeleton
+	import LexicalEditor from '$lib/components/editor/LexicalEditor.svelte';
 	import File from '$lib/components/icons/File.svelte';
 	import { FileDropzone } from '@skeletonlabs/skeleton';
 
-	import MarkdownEditor from '$lib/components/editor/MarkdownEditor.svelte';
+	// import MarkdownEditor from '$lib/components/editor/MarkdownEditor.svelte';
 
 	//Skeleton
 	let files: FileList;
@@ -26,4 +27,6 @@
 	<svelte:fragment slot="meta">less than 5 mb</svelte:fragment>
 </FileDropzone> -->
 
-<MarkdownEditor {value} {onValueChange} />
+<!-- <MarkdownEditor {value} {onValueChange} /> -->
+
+<LexicalEditor />
