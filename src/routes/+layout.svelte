@@ -5,7 +5,15 @@
 	import '../app.postcss';
 	import hljs from 'highlight.js';
 	import 'highlight.js/styles/github-dark.css';
-	import { AppShell, AppBar, storeHighlightJs, Drawer, drawerStore } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		AppBar,
+		storeHighlightJs,
+		Drawer,
+		drawerStore,
+		LightSwitch,
+		autoModeWatcher
+	} from '@skeletonlabs/skeleton';
 	storeHighlightJs.set(hljs);
 
 	//Breadcrumbs
@@ -45,6 +53,10 @@
 	$: classesSidebar = $page.url.pathname === '/' ? 'w-0' : 'w-0 lg:w-64';
 </script>
 
+<svelte:head>
+	{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}
+</svelte:head>
+
 <Drawer>
 	<h2 class="p-4">
 		<button class="lg:hidden btn btn-sm mr-4 variant-filled-secondary" on:click={drawerClose}>
@@ -70,7 +82,10 @@
 							</svg>
 						</span>
 					</button>
+
 					<strong class="text-xl uppercase">Feavel's blog.</strong>
+
+					<LightSwitch />
 				</div>
 			</svelte:fragment>
 		</AppBar>
