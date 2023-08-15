@@ -16,8 +16,10 @@
 >
 	<span
 		class="bg-black py-1 px-3 text-white rounded-b-md uppercase text-[0.6rem] font-bold w-max cursor-default"
-		contenteditable="false">Svelte Editable Component</span
+		contenteditable="false"
 	>
+		Svelte Editable Component
+	</span>
 
 	<NodeViewContent
 		class="mt-4 border-dashed border-gray-900/20 border-2 p-2 rounded-md"

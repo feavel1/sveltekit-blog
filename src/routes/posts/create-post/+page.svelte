@@ -1,27 +1,13 @@
 <script lang="ts">
-	//@ts-nocheck
-
 	import TiptapEditor from '$lib/components/editor/tiptapEditor/TiptapEditor.svelte';
 
 	// Skeleton
 	// import File from '$lib/components/icons/File.svelte';
 	// import { FileDropzone } from '@skeletonlabs/skeleton';
 
-	// Editor
-	// import MarkdownEditor from '$lib/components/editor/bytemdEditor/MarkdownEditor.svelte';
-	// import LexicalEditor from '$lib/components/editor/lexicalEditor/LexicalEditor.svelte';
-
 	//Skeleton
 	// let files: FileList;
-
-	// //Bytemd
-	// let value: string;
-	// function onValueChange(e: any) {
-	// 	value = e.detail.value;
-	// }
 </script>
-
-<h1 class="h1">World's simplest editor ever made 🌍</h1>
 
 <!-- <FileDropzone name="files" bind:files>
 	<svelte:fragment slot="lead">
@@ -33,8 +19,6 @@
 	<svelte:fragment slot="meta">less than 5 mb</svelte:fragment>
 </FileDropzone> -->
 
-<!-- <MarkdownEditor {value} {onValueChange} /> -->
-
-<!-- <LexicalEditor /> -->
-
-<TiptapEditor />
+<div>
+	<TiptapEditor />
+</div>

@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.1.0",
-		"@sveltejs/kit": "^1.22.5",
+		"@sveltejs/kit": "^1.22.6",
 		"@tailwindcss/forms": "^0.5.4",
 		"@tailwindcss/typography": "^0.5.9",
 		"autoprefixer": "^10.4.15",
@@ -32,25 +32,17 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@bytemd/plugin-frontmatter": "^1.21.0",
-		"@bytemd/plugin-gemoji": "^1.21.0",
-		"@bytemd/plugin-gfm": "^1.21.0",
-		"@bytemd/plugin-highlight": "^1.21.0",
-		"@bytemd/plugin-math": "^1.21.0",
-		"@bytemd/plugin-mermaid": "^1.21.0",
 		"@skeletonlabs/skeleton": "^1.11.0",
-		"@stripe/stripe-js": "^2.0.0",
+		"@stripe/stripe-js": "^2.1.0",
+		"stripe": "^12.18.0",
 		"@supabase/auth-helpers-sveltekit": "^0.10.2",
 		"@supabase/supabase-js": "^2.32.0",
+		"svelte-tiptap": "^1.1.2",
 		"@tiptap/core": "^2.0.4",
+		"@tiptap/extension-heading": "^2.0.4",
 		"@tiptap/pm": "^2.0.4",
 		"@tiptap/starter-kit": "^2.0.4",
-		"bytemd": "^1.21.0",
 		"clsx": "^2.0.0",
-		"github-markdown-css": "^5.2.0",
-		"highlight.js": "^11.8.0",
-		"stripe": "^12.18.0",
-		"svelte-lexical": "^0.3.4",
-		"svelte-tiptap": "^1.1.2"
+		"highlight.js": "^11.8.0"
 	}
 }
