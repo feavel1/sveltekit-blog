@@ -21,7 +21,7 @@
 			editorProps: {
 				attributes: {
 					class:
-						'dark:prose-invert border-2 border-black rounded-b-md p-3 outline-none prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none'
+						'dark:prose-invert border-2 border-black border-t-0 rounded-b-md p-3 outline-none prose prose-2xl mx-auto focus:outline-none'
 				}
 			}
 		});
@@ -81,9 +81,11 @@
 	];
 </script>
 
-<div class="max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-2xl mx-auto">
+<div class="w-full max-w-2xl mx-auto">
 	{#if editor}
-		<div class="border-black border-2 border-b-0 rounded-t-md p-2 flex gap-1 mx-auto">
+		<div
+			class="border-black border-2 border-b-0 bg-surface-400 rounded-t-md p-2 flex gap-1 mx-auto sticky top-0 z-10"
+		>
 			{#each menuItems as item (item.name)}
 				<button
 					type="button"

@@ -25,7 +25,7 @@
 </script>
 
 <div class="flex flex-col xl:flex-row gap-2">
-	<div class="flex flex-col mx-auto max-h-min gap-4 max-w-2xl xl:max-w-xs">
+	<div class="flex flex-col mx-auto max-h-min gap-4 max-w-2xl xl:max-w-xs xl:sticky top-2 z-10">
 		<h1>Post details:</h1>
 		<div class="input-group input-group-divider grid-cols-[auto_1fr_auto] border-2">
 			<div class="input-group-shim">Title</div>
@@ -52,12 +52,13 @@
 		<span class="chip variant-soft hover:variant-filled" on:click={doSomething}>
 			<span>☑️</span>
 			<span>Save</span>
+			<span class="kbd">Ctrl</span>
+			<span class=""> + </span>
+			<span class="kbd">S</span>
 		</span>
 
 		<SlideToggle name="slide" bind:checked={publicVisablity}>Public visability</SlideToggle>
 	</div>
-	<div class="flex flex-col gap-4">
-		<h1>Your content:</h1>
-		<TiptapEditor />
-	</div>
+
+	<TiptapEditor />
 </div>

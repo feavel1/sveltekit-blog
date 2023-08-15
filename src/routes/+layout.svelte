@@ -84,10 +84,9 @@
 					</button>
 
 					<strong class="text-xl uppercase">Feavel's blog.</strong>
-
-					<LightSwitch />
 				</div>
 			</svelte:fragment>
+			<svelte:fragment slot="trail"><LightSwitch /></svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
