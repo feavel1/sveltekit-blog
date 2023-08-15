@@ -3,5 +3,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	exclude: ['bytemd']
+	exclude: ['bytemd', 'tailwind-editor']
 });

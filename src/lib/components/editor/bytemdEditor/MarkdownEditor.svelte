@@ -11,7 +11,7 @@
 	import highlight from '@bytemd/plugin-highlight';
 
 	// Import Bytemd editor
-	import Editor from '../../../../node_modules/bytemd/svelte/editor.svelte';
+	import Editor from 'bytemd/svelte/editor.svelte';
 
 	import 'github-markdown-css';
 	import 'highlight.js/styles/github-dark.css';
